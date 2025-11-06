@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Faizan</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Faizan</h1>
+                <p>Computer Science Student | 6th Semester | Web Developer</p>
+                <p>Passionate about creating innovative solutions and building impactful projects that solve real-world problems.</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img src="Photo.jpeg" alt="Abdullah" class="profile-pic">
+
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-cards">
+                <div class="about-card">
+                    <h3>💻 Developer</h3>
+                    <p>Passionate about creating elegant solutions to complex problems using modern technologies and best practices.</p>
+                </div>
+                <div class="about-card">
+                    <h3>🎓 Student</h3>
+                    <p>Currently in 6th semester of Computer Science, constantly learning and exploring new technologies.</p>
+                </div>
+                <div class="about-card">
+                    <h3>🚀 Innovator</h3>
+                    <p>Always exploring new technologies and methodologies to stay ahead in the ever-evolving tech landscape.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-section" id="contact">
+            <h2>Get In Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message">Please enter your name (at least 2 characters)</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message">Please enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message">Please enter a message (at least 10 characters)</span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="success-message" id="successMessage">Thank you! Your message has been sent successfully.</div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved. | Built with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
